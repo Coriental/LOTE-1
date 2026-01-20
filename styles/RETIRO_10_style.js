@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_RETIRO_8 = function(feature, resolution){
+var style_RETIRO_10 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}

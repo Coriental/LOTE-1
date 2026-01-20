@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_MT3x35L1_10 = function(feature, resolution){
+var style_PostacionL1Nuevo30122025_7 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -16,12 +16,20 @@ var style_MT3x35L1_10 = function(feature, resolution){
     var textAlign = "left";
     var offsetX = 0;
     var offsetY = 0;
-    var placement = 'line';
+    var placement = 'point';
     if ("" !== null) {
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(255,127,0,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 2.508}),
+        image: new ol.style.Icon({
+                  imgSize: [580, 580],
+                  scale: 0.04482758620689655,
+                  anchor: [290.0, 290.0],
+                  anchorXUnits: "pixels",
+                  anchorYUnits: "pixels",
+                  rotation: 0.0,
+                  src: "styles/poi_place_village_5.svg"
+            }),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
